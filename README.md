@@ -9,3 +9,7 @@ Your users should be able to:
 - See hover states for all interactive elements on the page
 - Create, Read, Update, and Delete comments and replies
 - Upvote and downvote comments
+
+
+https://user-images.githubusercontent.com/99580663/209840923-813bd4e2-e7ad-4aed-a946-159efbbd8ab1.mp4
+
