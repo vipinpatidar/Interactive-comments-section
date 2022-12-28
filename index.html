@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Interactive comments section</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- <div class="comment" data-id="1">
+        <div class="comment-header">
+          <img src="./images/avatars/image-amyrobson.png" alt="" />
+          <p>amyrobson</p>
+          <span>1 month ago</span>
+          <button><i class="fa-solid fa-reply"></i> Reply</button>
+        </div>
+        <div class="comment-pera">
+          <p>
+            Impressive! Though it seems the drag feature could be improved. But
+            overall it looks incredible. You've nailed the design and the
+            responsiveness at various breakpoints works really well.
+          </p>
+        </div>
+        <div class="comment-score">
+          <button>+</button>
+          <p>12</p>
+          <button>-</button>
+        </div>
+      </div> -->
+      <!-- Reply comment -->
+      <!-- <div class="comment reply-comment" data-id="1">
+        <div class="comment-header">
+          <img src="./images/avatars/image-amyrobson.png" alt="" />
+          <p>amyrobson</p>
+          <span>1 month ago</span>
+          <button><i class="fa-solid fa-reply"></i> Reply</button>
+        </div>
+        <div class="comment-pera">
+          <p>
+            Impressive! Though it seems the drag feature could be improved. But
+            overall it looks incredible. You've nailed the design and the
+            responsiveness at various breakpoints works really well.
+          </p>
+        </div>
+        <div class="comment-score">
+          <button>+</button>
+          <p>12</p>
+          <button>-</button>
+        </div>
+      </div> -->
+      <!-- textarea -->
+      <!-- <div class="comment-textarea">
+        <img src="./images/avatars/image-juliusomo.png" alt="" />
+        <textarea name="reply" id="textarea" cols="65" rows="5"></textarea>
+        <button>Reply</button>
+      </div> -->
+      <!-- reply textarea -->
+      <!-- <div class="comment-textarea reply-textarea">
+        <img src="./images/avatars/image-juliusomo.png" alt="" />
+        <textarea name="reply" id="textarea" cols="65" rows="5"></textarea>
+        <button>Reply</button>
+      </div> -->
+    </div>
+    <div class="overlay show">
+      <div class="delete-model">
+        <h2>Delete comment</h2>
+        <p>
+          Are you sure you want to delet this comment? This will remove the
+          comment and can't be undone
+        </p>
+        <button id="gray-btn">No, Cancel</button>
+        <button id="red-btn">yes, delete</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

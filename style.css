@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  overflow-x: hidden;
+}
+
+:root {
+  --Moderate-blue: hsl(238, 40%, 52%);
+  --Soft-Red: hsl(358, 79%, 66%);
+  --Light-grayish-blue: hsl(239, 57%, 85%);
+  --Pale-red: hsl(357, 100%, 86%);
+
+  --Dark-blue: hsl(212, 24%, 26%);
+  --Grayish-Blue: hsl(211, 10%, 45%);
+  --Light-gray: hsl(223, 19%, 93%);
+  --Very-light-gray: hsl(228, 33%, 97%);
+  --White: hsl(0, 0%, 100%);
+}
+body {
+  width: 100vw;
+  height: 110vh;
+  background-color: var(--Light-gray);
+  display: flex;
+  justify-content: center;
+}
+.container {
+  position: relative;
+  padding-top: 3rem;
+}
+.comment {
+  max-width: 44vw;
+  min-height: 160px;
+  background-color: var(--White);
+  margin-top: 0.5rem;
+  border-radius: 6px;
+  position: relative;
+}
+
+.reply-comment {
+  margin: 0.5rem 0rem 0rem 6vw;
+  max-width: 38vw;
+  min-height: 160px;
+}
+.comment-header {
+  display: flex;
+  align-items: center;
+  padding: 1.5em 2em 0.8em 4em;
+}
+
+.comment-header img {
+  width: 30px;
+}
+
+.comment-header p {
+  color: var(--Dark-blue);
+  font-weight: 500;
+  font-size: 16px;
+}
+.comment-header * {
+  margin-left: 10px;
+}
+.comment-header span {
+  color: var(--Grayish-Blue);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.comment-header button {
+  margin-left: auto;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--Moderate-blue);
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 300ms;
+}
+
+.comment-header button:hover {
+  color: var(--Light-grayish-blue);
+  cursor: pointer;
+}
+
+.delete-edit {
+  margin-left: auto;
+}
+.delete-edit button {
+  color: var(--Moderate-blue);
+}
+.delete-edit button:hover {
+  color: var(--Light-grayish-blue);
+  cursor: pointer;
+}
+.delete-edit button:first-child {
+  transition: color 300ms;
+  color: var(--Soft-Red);
+}
+.delete-edit button:first-child:hover {
+  color: var(--Pale-red);
+
+  cursor: pointer;
+}
+.comment-pera {
+  padding: 0em 2em 0rem 4.5em;
+}
+.comment-pera p {
+  font-size: 16px;
+  color: var(--Grayish-Blue);
+  line-height: 1.3;
+}
+.comment-score {
+  position: absolute;
+  left: 1rem;
+  top: 25%;
+  background-color: var(--Light-gray);
+  padding: 8px;
+  text-align: center;
+  color: var(--Moderate-blue);
+  border-radius: 6px;
+}
+
+.comment-score button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--Light-grayish-blue);
+  font-size: 18px;
+  font-weight: 700;
+  transition: color 300ms;
+}
+.comment-score button:hover {
+  color: var(--Moderate-blue);
+  cursor: pointer;
+}
+
+.comment-score p {
+  margin: 4px auto;
+}
+.comment-textarea {
+  display: flex;
+  align-items: center;
+  max-width: 44vw;
+  min-height: 130px;
+  background-color: var(--White);
+  margin-top: 0.5rem;
+  border-radius: 6px;
+  position: relative;
+  padding: 0.4rem;
+}
+
+.reply-textarea {
+  margin: 0.5rem 0rem 0rem 6vw;
+  max-width: 38vw;
+  min-height: 120px;
+}
+.replyto {
+  color: var(--Moderate-blue);
+}
+
+#updateBtn {
+  float: right;
+  margin: 0.5rem 2.5rem 1rem 0;
+  padding: 12px 20px;
+  background-color: var(--Moderate-blue);
+  color: var(--White);
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  display: none;
+}
+.comment-textarea img {
+  align-self: start;
+  margin: 1rem 0.5rem;
+  width: 40px;
+}
+.comment-textarea button {
+  grid-column: -1;
+  align-self: start;
+  margin: 1.6rem 1rem;
+  padding: 10px 18px;
+  background-color: var(--Moderate-blue);
+  border: none;
+  outline: none;
+  color: var(--White);
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+.comment-textarea textarea {
+  resize: none;
+  border-radius: 6px;
+  margin: 0rem 0rem;
+  outline: none;
+  padding: 10px 10px;
+}
+
+#editTextarea {
+  resize: none;
+  border-radius: 6px;
+  outline: none;
+  padding: 10px 10px;
+  font-size: 16px;
+}
+/* model */
+.delete-model {
+  width: 380px;
+  min-height: 100px;
+  padding: 25px;
+  background-color: var(--White);
+  border-radius: 7px;
+  position: absolute;
+  z-index: 10;
+}
+
+.delete-model h2 {
+  color: var(--Dark-blue);
+  font-weight: 500;
+}
+.delete-model p {
+  margin: 1.5em auto;
+  font-size: 16px;
+  color: var(--Grayish-Blue);
+}
+
+.delete-model button {
+  padding: 12px 24px;
+  font-size: 16px;
+  color: var(--White);
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background-color: var(--Grayish-Blue);
+
+  text-transform: uppercase;
+}
+
+.delete-model #red-btn {
+  background-color: var(--Soft-Red);
+  margin-left: 10px;
+}
+.overlay {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 300ms;
+}
+.show {
+  display: none;
+}
